@@ -9,7 +9,7 @@ terraform {
 provider "docker" {}
 
 resource "docker_container" "nginx" {
-  image = "nginx:1.18.0"
+  image = "nginx:1.25.4"
   name  = "tutorial"
   labels {
     label = "traefik.enable"
